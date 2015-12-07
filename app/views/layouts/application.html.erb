@@ -17,7 +17,7 @@
 				<span class='icon-bar'></span>
 			</button>
 			<%=link_to root_path, class: 'navbar-brand' do%>
-				<i class="fa fa-users"></i>
+				<i class="fa fa-users"></i> <!--icon from font awesome -->
 				Dev Match
 			<% end %>
 		</div>
@@ -32,6 +32,9 @@
 	</div>
 </nav>
 <div class="container">
+	<% flash.each do |k, v| %>
+		<%= content_tag :div, v, class: "alert alert-#{k}" %>
+	<% end %>
 	<%= yield %>
 </div>
 </body>
