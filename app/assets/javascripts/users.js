@@ -27,7 +27,7 @@ $(document).ready(function(){
 	}); //form submission
 
 	function stripeResponseHandler(status, response) {
-		// Get a referense to the form
+		// Get a reference to the form
 		var f = $("#new_user");
 
 		// Get token form the response

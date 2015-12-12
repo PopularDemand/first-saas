@@ -16,6 +16,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 	end
 
 	private
+	# This redirects a user if they end up registration page with an non-valid plan parameter
 		def select_plan
 			unless params[:plan] && (params[:plan] == '1' || params[:plan] == '2')
 				flash[:notice] = "Please select membership plan to sign up."
