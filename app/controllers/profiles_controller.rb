@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
 	end
 
 	def create
-		@user = User.find( params[user_id] )
+		@user = User.find( params[:user_id] )
 		#grab the information from the form
 		@profile = @user.build_profile(profile_params)
 		if @profile.save
