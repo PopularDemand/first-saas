@@ -4,8 +4,12 @@ class ProfilesController < ApplicationController
 		# Form for each user to create their page
 		# Gets active users id
 		@user = User.find(params[:user_id])
+		
 		# build_profile available because user model nested with profile
-		@profile = @user.build_profile
+		# build profile will wipe any existing profile associated with the user
+		# when the user gets to the /new form
+		#@profile = @user.build_profile
+		@profile = Profile.new
 	end
 
 	def create
