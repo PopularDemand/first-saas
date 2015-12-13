@@ -1,3 +1,8 @@
+<!-- New users profile path is users/:user_id/profi....
+	because there is a symbol in the url, we need to pass a query string parameter so page can populate -->
+<%= link_to "Create Your Profile", new_user_profile_path(current_user) if current_user %>
+<!--current_user is devise method -->
+
 <div class='jumbotron text-center'>
 	<h1>Welcome to Dev Match</h1>
 	<h3>A membership site where entrepreneurs can meet developers</h3>
