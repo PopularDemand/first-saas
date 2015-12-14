@@ -12,6 +12,11 @@ group :production do
   gem 'rails_12factor'
 end
 
+# Use Chrome add-on RailsPanel for development
+group :development do
+  gem 'meta_request'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
 # Use bootstrap lib for styles
