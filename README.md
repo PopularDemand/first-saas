@@ -2,7 +2,7 @@
 
 Subscription based website that bring developers, entrepreneurs, and investors together.
 
-[Live site](https://dev-matching.herokuapp.com/)
+[Live site](https://devmatching.herokuapp.com/)
 
 This application is built with **Ruby on Rails** and uses the following dependencies:
 * *Bootstrap* framework
